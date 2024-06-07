@@ -39,6 +39,10 @@ li {
   margin: 0;
 }
 
+img {
+  width: 100%;
+}
+
 .header {
   padding: 8px 36px;
   display: flex;
@@ -66,6 +70,17 @@ li {
 
 .d-none {
   display: none;
+}
+
+.main-body .hero-section {
+  padding: 48px 36px;
+  background: #faebd7;
+  display: flex;
+}
+
+.main-body .hero-section .hero-left {
+  max-width: 600px;
+  width: 100%;
 }
 
 @keyframes mobileNav {
