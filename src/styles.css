@@ -1,0 +1,77 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizespeed;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  transition: color 0.2s ease 0s;
+  cursor: pointer;
+  &:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.header {
+  padding: 8px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+
+.header .logo {
+  font-size: 30px;
+  font-family: "DM Serif Display", serif;
+}
+
+.header .header-right a {
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+.header .menu {
+  display: none;
+}
+.header .menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 8px 18px;
+  }
+  .header .logo {
+    font-size: 25px;
+  }
+  .header .header-right {
+    display: none;
+  }
+  .header .menu {
+    display: block;
+  }
+  .header .menu .menu-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
