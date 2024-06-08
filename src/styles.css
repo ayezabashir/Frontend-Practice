@@ -61,6 +61,11 @@ h6 {
   display: block;
   text-decoration: none;
   width: fit-content;
+  &:hover {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .primary-link {
@@ -125,6 +130,25 @@ h6 {
   display: flex;
   gap: 15px;
   align-items: center;
+}
+
+.main-body .learn-section {
+  padding: 50px 18px;
+}
+
+.main-body .learn-section h2 {
+  font-size: 36px;
+  margin: auto auto 48px;
+  max-width: 650px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.main-body .learn-section p {
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+  max-width: 450px;
 }
 
 @keyframes mobileNav {
@@ -200,10 +224,19 @@ h6 {
   .main-body .hero-section {
     padding: 50px 18px;
   }
+  .main-body .learn-section h2 {
+    font-size: 26px;
+    text-align: center;
+    margin: auto auto 48px;
+    max-width: 650px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .main-body .hero-section .hero-right {
     display: none;
+  }
+  .main-body .learn-section p {
+    font-size: 20px;
   }
 }
