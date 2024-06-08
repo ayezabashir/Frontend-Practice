@@ -43,6 +43,29 @@ img {
   width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+.primary-link,
+.secondary-link {
+  border: 2px solid black;
+  border-radius: 0px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.primary-link {
+  background: white;
+}
 .header {
   padding: 8px 36px;
   display: flex;
@@ -73,14 +96,35 @@ img {
 }
 
 .main-body .hero-section {
-  padding: 48px 36px;
+  padding: 100px 36px;
   background: #faebd7;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #333;
 }
 
 .main-body .hero-section .hero-left {
   max-width: 600px;
   width: 100%;
+}
+
+.main-body .hero-section .hero-left h2 {
+  font-size: 55px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.main-body .hero-section .hero-left p {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0px;
+  font-size: 23px;
+}
+.main-body .hero-section .hero-left .link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 @keyframes mobileNav {
@@ -140,5 +184,26 @@ img {
   }
   .mobile-menu-items .nav-items a {
     font-weight: 700;
+  }
+  .main-body .hero-section {
+    padding: 100px 18px;
+  }
+
+  .main-body .hero-section .hero-left h2 {
+    font-size: 33px;
+  }
+
+  .main-body .hero-section .hero-left p {
+    margin: 18px 0px;
+    font-size: 18px;
+  }
+  .main-body .hero-section {
+    padding: 50px 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-body .hero-section .hero-right {
+    display: none;
   }
 }
