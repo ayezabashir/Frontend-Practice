@@ -185,6 +185,41 @@ h6 {
   text-align: center;
 }
 
+.main-body .learn-section .ready h2 {
+  max-width: 400px;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.main-body .learn-section .ready a {
+  margin: 0 auto;
+}
+
+.footer {
+  color: white;
+  background: black;
+  padding: 40px 20px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer-section .footer-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100% - 10px);
+  max-width: 400px;
+}
+
 @keyframes mobileNav {
   from {
     width: 50px;
@@ -272,5 +307,19 @@ h6 {
   }
   .main-body .learn-section p {
     font-size: 20px;
+  }
+  .features-container .features .feature-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .features-container .features .feature-card img {
+    margin-bottom: 12px;
+    max-width: 75px;
+  }
+  .footer .footer-section {
+    align-items: start;
+  }
+  .footer .footer-section .footer-nav-links {
+    flex-direction: column;
   }
 }
