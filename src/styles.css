@@ -73,6 +73,20 @@ h6 {
 .primary-link {
   background: white;
 }
+
+.view-all {
+  border-radius: 0px;
+  padding: 10px 15px;
+  border: 2px solid black;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  background: #000;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  min-width: 100px;
+}
 .header {
   padding: 8px 36px;
   display: flex;
@@ -197,6 +211,102 @@ h6 {
   margin: 0 auto;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1600px;
+  justify-content: center;
+  margin: auto;
+}
+
+.projects .project-text h2 {
+  font-size: 72px;
+  margin: 72px 0px 24px;
+}
+
+.projects .project-text h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 26px;
+}
+
+.projects .project-text .steps {
+  margin-bottom: 12.5px;
+}
+
+.projects .project-text .steps li {
+  font-size: 22px;
+  max-width: 500px;
+  margin: 10px 0px;
+}
+
+.projects .project-filter {
+  padding: 0 16px;
+  margin-top: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .project-filter .primary-link {
+  font-weight: 600;
+  min-width: 100px;
+  font-size: 16px;
+}
+
+.project-filter .filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-filter .filter-btn .primary-link:nth-child(2) {
+  &:hover {
+    background: #bcff93;
+    color: #000;
+  }
+}
+
+.project-filter .filter-btn .primary-link:nth-child(3) {
+  &:hover {
+    background: #fcff74;
+    color: #000;
+  }
+}
+.project-filter .filter-btn .primary-link:nth-child(4) {
+  &:hover {
+    background: #ffd430;
+    color: #000;
+  }
+}
+
+.project-filter form #search {
+  width: 100%;
+  max-width: 445px;
+  border: 2px solid;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-top: 10px;
+  &::placeholder {
+    font-family: inherit;
+    font-size: 18px;
+  }
+}
+
+.projects .note {
+  max-width: 650px;
+  text-align: center;
+  margin: 16px 0px;
+  padding: 0px 16px;
+}
+
+.projects .note p {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px;
+}
 .footer {
   color: white;
   background: black;
@@ -301,6 +411,11 @@ h6 {
     margin: auto auto 48px;
     max-width: 650px;
   }
+  .projects .project-text h2 {
+    font-size: 40px;
+    margin: 33px 0;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -323,5 +438,16 @@ h6 {
   }
   .footer .footer-section .footer-nav-links {
     flex-direction: column;
+  }
+  .projects .project-text .steps {
+    padding: 0 16px;
+  }
+  .projects .project-text .steps li {
+    font-size: 18px;
+  }
+  .projects .project-filter .filter-btn {
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
   }
 }
