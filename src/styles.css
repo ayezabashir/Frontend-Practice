@@ -54,6 +54,10 @@ h6 {
   font-family: "DM Serif Display", serif;
 }
 
+form {
+  width: 100%;
+}
+
 .primary-link,
 .secondary-link {
   border: 2px solid black;
