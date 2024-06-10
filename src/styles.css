@@ -395,6 +395,44 @@ form {
   line-height: 1.1;
 }
 
+.faq .questions {
+  max-width: 1200px;
+  margin: 0px auto 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.faq .questions .question {
+  max-width: 750px;
+  border: 2px solid black;
+  width: 100%;
+  margin-top: 20px;
+}
+
+details[open] summary {
+  border-bottom: 2px solid black;
+}
+
+.faq .questions .question summary {
+  font-family: "DM Serif Display", serif;
+  cursor: pointer;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  font-size: 1.38316rem;
+  line-height: 1.1;
+  color: black;
+  padding: 12px;
+  background: antiquewhite;
+}
+
+.faq .questions .question p {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0px;
+}
+
 .footer {
   color: white;
   background: black;
