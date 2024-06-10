@@ -387,6 +387,14 @@ form {
   }
 }
 
+.faq h2 {
+  text-align: center;
+  font-size: 72px;
+  margin: 72px auto 48px;
+  max-width: 600px;
+  line-height: 1.1;
+}
+
 .footer {
   color: white;
   background: black;
