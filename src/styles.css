@@ -454,6 +454,49 @@ details[open] summary {
   line-height: 1.1;
 }
 
+.contact .contact-form {
+  background: antiquewhite;
+  width: 100%;
+  margin: auto 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0px;
+  max-width: 600px;
+}
+
+.contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form form .input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px 0;
+}
+
+.contact-form form label {
+  font-weight: 600;
+}
+.contact-form form input,
+textarea {
+  margin: 15px 0px 0px;
+  font: inherit;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.contact-form .primary-link {
+  width: 150px;
+  color: black;
+  font-weight: 600;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
 .footer {
   color: white;
   background: black;
