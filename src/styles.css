@@ -312,6 +312,15 @@ form {
   padding: 5px;
 }
 
+.project-list {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .blog {
   background: #f7f7f7;
   min-height: 80vh;
