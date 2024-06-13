@@ -313,22 +313,24 @@ form {
 }
 
 .project-list {
-  width: 100%;
-  max-width: 1600px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 29px;
+  margin: 0 20px 50px 20px;
+  justify-content: space-around;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .project-list .project {
   position: relative;
   width: 100%;
-  max-width: calc(25% - 36px);
-  margin: 18px;
   transition: transform 0.3s ease 0s;
   outline: black solid 2px;
   background-color: antiquewhite;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
 }
 .project-list .level {
   position: absolute;
@@ -365,6 +367,31 @@ form {
   margin: 0;
   padding-left: 20px;
   margin-bottom: 10px;
+}
+
+.retired-projects {
+  border-top: 2px solid black;
+  margin-top: 30px;
+}
+
+.retired-projects h3 {
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: bold;
+  text-align: center;
+}
+
+.retired-projects p {
+  max-width: 650px;
+  text-align: center;
+  margin: 16px auto 30px auto;
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 0px 16px;
+}
+
+.retired-projects .project-list .project .title {
+  text-align: left;
 }
 
 .blog {
@@ -589,6 +616,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     padding: 8px 18px;
@@ -697,5 +730,11 @@ textarea {
     max-width: 250px;
     justify-content: center;
     align-items: center;
+  }
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-list .project .title {
+    font-size: 18px;
   }
 }
